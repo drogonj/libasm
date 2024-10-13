@@ -1,2 +1,4 @@
 tester
+objs
 *.o
+*.a

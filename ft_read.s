@@ -1,21 +1,20 @@
-
 extern __errno_location
 
 section .text
- global ft_write
+ global ft_read
  default rel
 
-ft_write:
- mov rax, 1
+ft_read:
+ mov rax, 0
  syscall
  test rax, rax
- js __error
+ js __return_error
  ret
 
-__error:
+__return_error:
  mov rdi, rax
  call __errno_location WRT ..plt
  neg rdi
  mov [rax], rdi
  mov rax, -1
- ret
+ ret 
