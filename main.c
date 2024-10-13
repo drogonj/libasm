@@ -9,6 +9,11 @@
 #define BL "\e[0;34m"
 #define R  "\e[0m"
 
+
+// http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html
+// https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+// https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#x86_64-64_bit
+
 size_t  ft_strlen(const char * str);
 char *  ft_strcpy(char * dest, const char * src);
 ssize_t ft_write(int fd, const void * buf, size_t count);
