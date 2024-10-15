@@ -3,7 +3,7 @@ section .text
  default rel
 
 ft_strlen:
- mov rax, 0
+ xor rax, rax
  jmp __counter
 
 __counter:
